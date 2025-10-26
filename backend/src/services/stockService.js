@@ -1,5 +1,5 @@
-const axios = require("axios");
-const cheerio = require("cheerio");
+import axios from "axios";
+import * as cheerio from "cheerio";
 
 /**
  * Service untuk mengambil data saham BRI
@@ -168,4 +168,5 @@ class StockService {
   }
 }
 
-module.exports = new StockService();
+// module.exports = new StockService();
+export default new StockService();

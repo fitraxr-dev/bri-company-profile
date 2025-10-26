@@ -76,6 +76,7 @@ userSchema.methods.toJSON = function () {
   return obj;
 };
 
-const User = mongoose.model("User", userSchema);
+// Prevent OverwriteModelError during hot-reload
+const User = mongoose.models.User || mongoose.model("User", userSchema);
 
 export default User;
