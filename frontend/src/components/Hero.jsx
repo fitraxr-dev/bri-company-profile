@@ -1,5 +1,7 @@
 import React from "react";
 import { useTranslation, Trans } from "react-i18next";
+import { Link } from "react-router-dom";
+import { UserPlus } from "lucide-react";
 import kartuBrimo from "../assets/kartu-removebg-preview.png";
 
 export default function Hero() {
@@ -37,13 +39,14 @@ export default function Hero() {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
-              <a
-                href="#services"
-                className="btn btn-lg px-6 py-3 bg-bri-orange text-white font-semibold shadow-md hover:brightness-95"
-                aria-label={t("hero.learnServices")}
+              <Link
+                to="/signup"
+                className="btn btn-lg px-8 py-4 bg-bri-orange text-white font-semibold shadow-lg hover:bg-orange-600 hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2"
+                aria-label={t("hero.joinBrimo")}
               >
+                <UserPlus size={20} />
                 {t("hero.joinBrimo")}
-              </a>
+              </Link>
             </div>
           </div>
 

@@ -1,55 +1,34 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import AboutSection from "./components/AboutSection";
-import ServicesSection from "./components/ServicesSection";
-import InfoSahamBRI from "./components/InfoSahamBRI";
-import FooterBRI from "./components/FooterBRI";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { AuthProvider } from "./context/AuthContext";
+import ProtectedRoute from "./components/ProtectedRoute";
+
+// Pages
+import HomePage from "./pages/HomePage";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import Dashboard from "./pages/Dashboard";
 
 export default function App() {
-  const [pong, setPong] = useState(null);
-
-  useEffect(() => {
-    axios
-      .get("/api/ping")
-      .then((r) => setPong(r.data?.message))
-      .catch(() => setPong("no response"));
-  }, []);
-
   return (
-    <div className="min-h-screen bg-gray-100">
-      <Navbar />
-      <Hero />
-      <AboutSection />
-      <ServicesSection />
+    <Router>
+      <AuthProvider>
+        <Routes>
+          {/* Public Routes */}
+          <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
 
-      {/* Section Info Saham BRI - Minimalist */}
-      <section className="py-12 bg-gray-50" id="saham">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">
-              Informasi Saham BRI
-            </h2>
-            <p className="text-sm text-gray-600">
-              Data real-time dari bursa efek
-            </p>
-          </div>
-          <InfoSahamBRI />
-        </div>
-      </section>
-
-      <div className="container mx-auto p-4">
-        <h1 className="text-2xl font-heading mb-4">
-          Welcome to Bank BRI Redesign
-        </h1>
-        <p className="font-body">
-          Backend Status: {pong === null ? "Loading..." : pong}
-        </p>
-      </div>
-
-      {/* Footer */}
-      <FooterBRI />
-    </div>
+          {/* Protected Routes */}
+          <Route
+            path="/dashboard"
+            element={
+              <ProtectedRoute>
+                <Dashboard />
+              </ProtectedRoute>
+            }
+          />
+        </Routes>
+      </AuthProvider>
+    </Router>
   );
 }

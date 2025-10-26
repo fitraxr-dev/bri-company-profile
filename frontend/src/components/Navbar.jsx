@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import { LogIn } from "lucide-react";
 import logo from "../assets/bri-logo-white.png";
 import LanguageSwitcher from "./LanguageSwitcher";
 
@@ -23,7 +25,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="relative bg-bri-primary text-white shadow-sm">
+    <header className="sticky top-0 z-50 bg-bri-primary text-white shadow-lg">
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between h-16">
           {/* Left: logo */}
@@ -60,6 +62,15 @@ export default function Navbar() {
 
           {/* Right: mobile toggle & optional actions */}
           <div className="flex items-center gap-2">
+            {/* Login Button - Desktop */}
+            <Link
+              to="/login"
+              className="hidden md:flex items-center gap-2 px-4 py-2 bg-bri-orange text-white rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300"
+            >
+              <LogIn size={18} />
+              {t("navbar.login") || "Login"}
+            </Link>
+
             {/* Language Switcher - Desktop */}
             <div className="hidden md:flex">
               <LanguageSwitcher />
@@ -121,6 +132,15 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
+          {/* Login Button - Mobile */}
+          <Link
+            to="/login"
+            className="flex items-center justify-center gap-2 px-4 py-3 bg-bri-orange text-white rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300 mt-2"
+            onClick={() => setOpen(false)}
+          >
+            <LogIn size={18} />
+            {t("navbar.login") || "Login"}
+          </Link>
           {/* Language Switcher - Mobile */}
           <div className="mt-4 px-3 flex justify-center">
             <LanguageSwitcher />

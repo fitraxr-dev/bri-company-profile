@@ -1,6 +1,7 @@
 {
-  "name": "goto-frontend",
-  "version": "0.1.0",
+  "name": "brimo-frontend",
+  "version": "1.0.0",
+  "description": "BRImo - Digital Banking Solution by Bank BRI",
   "private": true,
   "scripts": {
     "dev": "vite",
@@ -16,7 +17,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^16.2.0",
-    "react-icons": "^5.5.0"
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.9.4"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.0",
