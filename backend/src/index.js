@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 const mongoUri =
-  process.env.MONGODB_URI || "mongodb://localhost:27017/goto-dev";
+  process.env.MONGODB_URI || "mongodb://localhost:27017/brimo_db";
 mongoose
   .connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("MongoDB connected"))

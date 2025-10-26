@@ -61,7 +61,7 @@ export default function Hero() {
                 style={{ background: "#00529C" }}
                 aria-hidden="true"
               />
-              
+
               {/* BRImo Card Image */}
               <div className="relative z-10 animate-float">
                 <img
@@ -78,7 +78,8 @@ export default function Hero() {
       {/* Custom Animation */}
       <style jsx>{`
         @keyframes float {
-          0%, 100% {
+          0%,
+          100% {
             transform: translateY(0px);
           }
           50% {
