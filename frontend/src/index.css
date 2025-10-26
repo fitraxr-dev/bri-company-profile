@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;600;700&display=swap");
+
+:root {
+  /* BRI color palette */
+  --bri-blue: #00529b; /* primary */
+  --bri-deep: #003b73; /* dark variant */
+  --bri-orange: #f58220; /* accent */
+  --bri-bg: #f4f6f8; /* background */
+  --bri-sky: #e6f0fa; /* soft / hover */
+  --bri-charcoal: #1f203b; /* text dark */
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Small base layer to use the palette by default */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--bri-bg);
+    color: var(--bri-charcoal);
+    /* default body font */
+    font-family: "Lato", "Open Sans", Arial, sans-serif;
+  }
+  a {
+    color: var(--bri-blue);
+  }
+}
+
+/* project-level styles can go here */
