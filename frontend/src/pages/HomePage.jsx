@@ -8,15 +8,6 @@ import InfoSahamBRI from "../components/InfoSahamBRI";
 import FooterBRI from "../components/FooterBRI";
 
 export default function HomePage() {
-  const [pong, setPong] = useState(null);
-
-  useEffect(() => {
-    axios
-      .get("/api/ping")
-      .then((r) => setPong(r.data?.message))
-      .catch(() => setPong("no response"));
-  }, []);
-
   return (
     <div className="min-h-screen bg-gray-100">
       <Navbar />
@@ -38,15 +29,6 @@ export default function HomePage() {
           <InfoSahamBRI />
         </div>
       </section>
-
-      <div className="container mx-auto p-4">
-        <h1 className="text-2xl font-heading mb-4">
-          Welcome to Bank BRI Redesign
-        </h1>
-        <p className="font-body">
-          Backend Status: {pong === null ? "Loading..." : pong}
-        </p>
-      </div>
 
       {/* Footer */}
       <FooterBRI />
