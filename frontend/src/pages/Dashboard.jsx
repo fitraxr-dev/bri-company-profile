@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import {
   User,
@@ -121,14 +121,18 @@ export default function Dashboard() {
                 Quick Actions
               </h3>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                <button className="flex flex-col items-center gap-2 p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition">
+                <Link
+                  to="/transfer"
+                  className="flex flex-col items-center gap-2 p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition"
+                >
                   <div className="w-12 h-12 bg-bri-primary rounded-full flex items-center justify-center text-white">
                     💸
                   </div>
                   <span className="text-sm font-medium text-gray-700">
                     Transfer
                   </span>
-                </button>
+                </Link>
+
                 <button className="flex flex-col items-center gap-2 p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition">
                   <div className="w-12 h-12 bg-bri-primary rounded-full flex items-center justify-center text-white">
                     📱
@@ -137,6 +141,7 @@ export default function Dashboard() {
                     Pulsa
                   </span>
                 </button>
+
                 <button className="flex flex-col items-center gap-2 p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition">
                   <div className="w-12 h-12 bg-bri-primary rounded-full flex items-center justify-center text-white">
                     💡
@@ -145,14 +150,18 @@ export default function Dashboard() {
                     Listrik
                   </span>
                 </button>
-                <button className="flex flex-col items-center gap-2 p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition">
+
+                <Link
+                  to="/history"
+                  className="flex flex-col items-center gap-2 p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition"
+                >
                   <div className="w-12 h-12 bg-bri-primary rounded-full flex items-center justify-center text-white">
                     📄
                   </div>
                   <span className="text-sm font-medium text-gray-700">
                     Mutasi
                   </span>
-                </button>
+                </Link>
               </div>
             </div>
           </div>
