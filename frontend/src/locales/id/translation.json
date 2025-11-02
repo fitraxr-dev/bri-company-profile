@@ -2,6 +2,7 @@
   "navbar": {
     "about": "Tentang Kami",
     "services": "Layanan Kami",
+    "kprSimulator": "Simulasi KPR",
     "stock": "Info Saham",
     "home": "Beranda",
     "login": "Masuk"
@@ -67,6 +68,39 @@
     "error": "Gagal memuat data saham",
     "errorMessage": "Gagal memuat data saham. Pastikan backend berjalan.",
     "tryAgain": "Coba Lagi"
+  },
+  "simulator": {
+    "title": "Simulasi KPR",
+    "subtitle": "Hitung cicilan KPR untuk rumah atau kendaraan Anda dengan suku bunga kompetitif dari BRI",
+    "selectType": "Pilih Tipe Pembiayaan",
+    "house": "Rumah",
+    "car": "Kendaraan",
+    "propertyPrice": "Harga Rumah",
+    "carPrice": "Harga Kendaraan",
+    "downPayment": "Uang Muka (DP)",
+    "loanTerm": "Tenor Pinjaman",
+    "interestRate": "Suku Bunga (p.a.)",
+    "calculate": "Hitung",
+    "reset": "Reset",
+    "result": "Hasil Simulasi",
+    "loanAmount": "Jumlah Pinjaman",
+    "monthlyPayment": "Cicilan per Bulan",
+    "totalPayment": "Total Pembayaran",
+    "totalInterest": "Total Bunga",
+    "tenor": "Tenor",
+    "rate": "Suku Bunga",
+    "downPaymentPercent": "DP",
+    "years": "Tahun",
+    "amount": "Jumlah",
+    "hideResult": "Tutup Hasil",
+    "fillForm": "Isi formulir di samping untuk melihat hasil simulasi",
+    "note": "Catatan",
+    "disclaimer": "Simulasi ini hanya untuk perkiraan. Bunga dan persyaratan kredit dapat berbeda sesuai kondisi pasar dan kelayakan kredit Anda.",
+    "validation": {
+      "invalidInput": "Input tidak valid",
+      "downPaymentTooHigh": "DP tidak bisa lebih dari harga properti",
+      "invalidLoan": "Jumlah pinjaman tidak valid"
+    }
   },
   "footer": {
     "brand": {

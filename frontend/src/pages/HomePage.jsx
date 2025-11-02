@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import AboutSection from "../components/AboutSection";
 import ServicesSection from "../components/ServicesSection";
+import KPRSimulator from "../components/KPRSimulator";
 import InfoSahamBRI from "../components/InfoSahamBRI";
 import FooterBRI from "../components/FooterBRI";
 
@@ -23,6 +24,7 @@ export default function HomePage() {
       <Hero />
       <AboutSection />
       <ServicesSection />
+      <KPRSimulator />
 
       {/* Section Info Saham BRI - Minimalist */}
       <section className="py-12 bg-gray-50" id="saham">

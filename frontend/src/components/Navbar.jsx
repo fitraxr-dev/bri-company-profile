@@ -21,6 +21,7 @@ export default function Navbar() {
   const links = [
     { href: "#about", label: t("navbar.about") },
     { href: "#services", label: t("navbar.services") },
+    { href: "#kpr-simulator", label: t("navbar.kprSimulator") || "KPR" },
     { href: "#saham", label: t("navbar.stock") },
   ];
 

@@ -2,6 +2,7 @@
   "navbar": {
     "about": "About Us",
     "services": "Our Services",
+    "kprSimulator": "KPR Simulator",
     "stock": "Stock Info",
     "home": "Home",
     "login": "Login"
@@ -67,6 +68,39 @@
     "error": "Failed to load stock data",
     "errorMessage": "Failed to load stock data. Make sure the backend is running.",
     "tryAgain": "Try Again"
+  },
+  "simulator": {
+    "title": "KPR Simulation",
+    "subtitle": "Calculate your KPR installment for home or vehicle with competitive interest rates from BRI",
+    "selectType": "Select Financing Type",
+    "house": "Home",
+    "car": "Vehicle",
+    "propertyPrice": "House Price",
+    "carPrice": "Vehicle Price",
+    "downPayment": "Down Payment (DP)",
+    "loanTerm": "Loan Term",
+    "interestRate": "Interest Rate (p.a.)",
+    "calculate": "Calculate",
+    "reset": "Reset",
+    "result": "Simulation Result",
+    "loanAmount": "Loan Amount",
+    "monthlyPayment": "Monthly Payment",
+    "totalPayment": "Total Payment",
+    "totalInterest": "Total Interest",
+    "tenor": "Tenor",
+    "rate": "Interest Rate",
+    "downPaymentPercent": "DP",
+    "years": "Years",
+    "amount": "Amount",
+    "hideResult": "Hide Result",
+    "fillForm": "Fill in the form on the left to see the simulation result",
+    "note": "Note",
+    "disclaimer": "This simulation is for estimation purposes only. Interest rates and credit terms may differ based on market conditions and your credit eligibility.",
+    "validation": {
+      "invalidInput": "Invalid input",
+      "downPaymentTooHigh": "DP cannot be more than property price",
+      "invalidLoan": "Invalid loan amount"
+    }
   },
   "footer": {
     "brand": {
