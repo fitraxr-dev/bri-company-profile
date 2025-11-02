@@ -93,7 +93,7 @@ export default function Transfer() {
                 Nomor Rekening Tujuan
               </label>
               <input
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3"
+                className="mt-1 block w-full rounded-md border border-gray-300 shadow-sm p-3 bg-white text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-bri-primary focus:border-transparent"
                 value={toAccount}
                 onChange={(e) => setToAccount(e.target.value)}
                 placeholder="contoh: 1234567890"
@@ -106,7 +106,7 @@ export default function Transfer() {
               </label>
               <input
                 type="number"
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3"
+                className="mt-1 block w-full rounded-md border border-gray-300 shadow-sm p-3 bg-white text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-bri-primary focus:border-transparent"
                 value={amount}
                 onChange={(e) => setAmount(e.target.value)}
                 placeholder="50000"
@@ -119,7 +119,7 @@ export default function Transfer() {
                 Keterangan (opsional)
               </label>
               <textarea
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3"
+                className="mt-1 block w-full rounded-md border border-gray-300 shadow-sm p-3 bg-white text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-bri-primary focus:border-transparent"
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
                 rows={3}
