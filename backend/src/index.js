@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 import cors from "cors";
 import stockService from "./services/stockService.js";
 import authRoutes from "./routes/auth.js";
+import transferRoutes from "./routes/transfer.js";
 import User from "./models/User.js";
 
 dotenv.config();
@@ -28,6 +29,9 @@ app.get("/api/ping", (req, res) => {
 
 // Auth routes
 app.use("/api/auth", authRoutes);
+
+// Transfer & transaction routes
+app.use("/api", transferRoutes);
 
 // Stock API Endpoint
 app.get("/api/stock/bbri", async (req, res) => {
