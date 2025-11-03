@@ -87,6 +87,7 @@ export const signup = async (req, res) => {
           accountNumber: newUser.accountNumber,
           balance: newUser.balance,
           isActive: newUser.isActive,
+          role: newUser.role,
         },
       },
     });
@@ -170,6 +171,7 @@ export const login = async (req, res) => {
           balance: user.balance,
           formattedBalance: user.formattedBalance,
           isActive: user.isActive,
+          role: user.role,
         },
       },
     });
@@ -212,6 +214,7 @@ export const getCurrentUser = async (req, res) => {
           balance: user.balance,
           formattedBalance: user.formattedBalance,
           isActive: user.isActive,
+          role: user.role,
           createdAt: user.createdAt,
           updatedAt: user.updatedAt,
         },

@@ -5,6 +5,7 @@ import cors from "cors";
 import stockService from "./services/stockService.js";
 import authRoutes from "./routes/auth.js";
 import transferRoutes from "./routes/transfer.js";
+import articleRoutes from "./routes/articles.js";
 import User from "./models/User.js";
 
 dotenv.config();
@@ -55,6 +56,9 @@ app.use("/api/auth", authRoutes);
 
 // Transfer & transaction routes
 app.use("/api", transferRoutes);
+
+// Articles routes
+app.use("/api/articles", articleRoutes);
 
 // Stock API Endpoint
 app.get("/api/stock/bbri", async (req, res) => {

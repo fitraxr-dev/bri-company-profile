@@ -8,7 +8,7 @@
     "login": "Masuk"
   },
   "hero": {
-    "title": "Bersama BRI <1>mo</1>, Wujudkan Masa Depan Finansial Anda.",
+    "title": "Bersama BRI<1>mo</1>, Wujudkan Masa Depan Finansial Anda.",
     "description": "BRI memberikan layanan perbankan terpercaya dengan solusi yang disesuaikan untuk kebutuhan individu dan perusahaan. Keamanan, kemudahan, dan layanan profesional kami siap mendampingi Anda mencapai tujuan finansial.",
     "joinBrimo": "Gabung BRImo",
     "contactUs": "Hubungi Kami"
@@ -153,5 +153,26 @@
     "select": "Pilih Bahasa",
     "en": "Inggris",
     "id": "Indonesia"
+  },
+  "articles": {
+    "title": "Artikel & Tips",
+    "subtitle": "Pelajari lebih lanjut tentang layanan perbankan digital BRI dan tips keuangan",
+    "readMore": "Baca Selengkapnya",
+    "viewAll": "Lihat Semua Artikel",
+    "category": "Kategori",
+    "author": "Penulis",
+    "publishedAt": "Dipublikasikan pada",
+    "share": "Bagikan",
+    "back": "Kembali",
+    "notFound": "Artikel Tidak Ditemukan",
+    "notFoundMessage": "Artikel yang Anda cari tidak ditemukan.",
+    "backToHome": "Kembali ke Beranda",
+    "helpful": "Apakah artikel ini membantu?",
+    "yes": "👍 Ya",
+    "no": "👎 Tidak",
+    "related": "Artikel Terkait",
+    "relatedMessage": "Artikel terkait akan ditampilkan di sini.",
+    "loading": "Memuat artikel...",
+    "error": "Gagal memuat artikel"
   }
 }
