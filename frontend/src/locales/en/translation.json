@@ -153,5 +153,26 @@
     "select": "Select Language",
     "en": "English",
     "id": "Indonesian"
+  },
+  "articles": {
+    "title": "Articles & Tips",
+    "subtitle": "Learn more about BRI digital banking services and financial tips",
+    "readMore": "Read More",
+    "viewAll": "View All Articles",
+    "category": "Category",
+    "author": "Author",
+    "publishedAt": "Published on",
+    "share": "Share",
+    "back": "Back",
+    "notFound": "Article Not Found",
+    "notFoundMessage": "The article you are looking for was not found.",
+    "backToHome": "Back to Home",
+    "helpful": "Was this article helpful?",
+    "yes": "👍 Yes",
+    "no": "👎 No",
+    "related": "Related Articles",
+    "relatedMessage": "Related articles will be displayed here.",
+    "loading": "Loading articles...",
+    "error": "Failed to load articles"
   }
 }

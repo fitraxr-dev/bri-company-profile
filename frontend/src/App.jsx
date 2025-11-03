@@ -9,6 +9,8 @@ import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
 import Transfer from "./pages/Transfer";
 import History from "./pages/History";
+import Articles from "./pages/Articles";
+import ArticleDetail from "./pages/ArticleDetail";
 
 export default function App() {
   return (
@@ -19,6 +21,8 @@ export default function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/articles" element={<Articles />} />
+          <Route path="/article/:slug" element={<ArticleDetail />} />
 
           {/* Protected Routes */}
           <Route
