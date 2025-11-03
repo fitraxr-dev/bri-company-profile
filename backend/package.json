@@ -11,9 +11,6 @@
     "lint": "eslint . --ext .js",
     "migrate": "node src/migrations/initUserCollection.js",
     "seed": "node src/seeders/seedUsers.js",
-    "db:setup": "npm run migrate && npm run seed"
-    "migrate": "node migrations/initUserCollection.js",
-    "seed": "node seeders/seedUsers.js",
     "db:setup": "npm run migrate && npm run seed",
     "migrate:articles": "node src/migrations/createArticlesCollection.js",
     "seed:articles": "node src/seed/articles.seed.js"
