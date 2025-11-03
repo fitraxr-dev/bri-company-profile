@@ -31,3 +31,16 @@
 }
 
 /* project-level styles can go here */
+
+/* Remove number input spinners for better UX across browsers */
+/* Chrome, Edge, Safari */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
