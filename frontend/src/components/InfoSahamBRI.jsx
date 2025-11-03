@@ -20,6 +20,9 @@ const InfoSahamBRI = () => {
   const [error, setError] = useState(null);
   const [lastUpdate, setLastUpdate] = useState(null);
 
+  // API URL from environment variable
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+
   // Fungsi untuk format angka ke rupiah dengan koma
   const formatRupiah = (number) => {
     if (!number && number !== 0) return "-";
@@ -60,7 +63,7 @@ const InfoSahamBRI = () => {
     setError(null);
 
     try {
-      const response = await axios.get("http://localhost:5000/api/stock/bbri", {
+      const response = await axios.get(`${API_URL}/stock/bbri`, {
         timeout: 15000, // 15 detik timeout
       });
 

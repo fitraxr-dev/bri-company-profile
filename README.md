@@ -4,6 +4,11 @@
 
 Modern web application untuk layanan perbankan digital Bank BRI dengan fitur lengkap dan user-friendly interface.
 
+**🚀 Ready for Production Deployment!**
+- Frontend: Vercel
+- Backend: Azure App Service (Linux)
+- Database: MongoDB Atlas
+
 This workspace contains two folders:
 
 - `backend/` — Express + Mongoose API dengan JWT Authentication
@@ -64,10 +69,16 @@ BCRYPT_ROUNDS=10
 
 Lihat dokumentasi lengkap di:
 
+**Development:**
 - [Authentication Setup](./AUTHENTICATION_SETUP.md)
 - [How to Run](./HOW_TO_RUN.md)
 - [UI Improvements](./UI_IMPROVEMENTS.md)
-- [Database Setup](./DATABASE_SETUP.md)
+- [Database Setup](./backend/DATABASE_SETUP.md)
+
+**Deployment (Production):**
+- [🐧 Deployment Guide - Linux](./DEPLOYMENT_GUIDE_LINUX.md) - **Recommended**
+- [Deployment Checklist - Linux](./DEPLOYMENT_CHECKLIST_LINUX.md)
+- [Linux Deployment Update](./LINUX_DEPLOYMENT_UPDATE.md)
 
 ## 🎯 Tech Stack
 
