@@ -9,8 +9,8 @@
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
     "lint": "eslint . --ext .js",
-    "migrate": "node migrations/initUserCollection.js",
-    "seed": "node seeders/seedUsers.js",
+    "migrate": "node src/migrations/initUserCollection.js",
+    "seed": "node src/seeders/seedUsers.js",
     "db:setup": "npm run migrate && npm run seed"
   },
   "engines": {
