@@ -121,7 +121,7 @@ const FooterBRI = () => {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-sm flex items-center gap-2 hover:text-white hover:translate-x-1 transition-all duration-200 group"
+                    className="text-sm flex items-center gap-2 text-white hover:translate-x-1 transition-all duration-200 group"
                   >
                     <FaChevronRight className="w-3 h-3 text-blue-400 group-hover:text-white" />
                     <span>{link.name}</span>
@@ -143,7 +143,7 @@ const FooterBRI = () => {
                   <li key={index}>
                     <a
                       href={link.href}
-                      className="text-sm flex items-center gap-2 hover:text-white hover:translate-x-1 transition-all duration-200 group"
+                      className="text-sm flex items-center gap-2  text-white hover:translate-x-1 transition-all duration-200 group"
                     >
                       <Icon className="w-4 h-4 text-blue-400 group-hover:text-white" />
                       <span>{link.name}</span>
@@ -176,7 +176,7 @@ const FooterBRI = () => {
               <div className="flex items-start gap-3">
                 <FaMapMarkerAlt className="w-4 h-4 text-blue-400 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-sm leading-relaxed">
+                  <p className="text-sm  text-white leading-relaxed">
                     Gedung BRI I, Jl. Jend. Sudirman Kav. 44-46, Jakarta Pusat
                     10210
                   </p>
@@ -189,7 +189,7 @@ const FooterBRI = () => {
                 <div>
                   <a
                     href="tel:14017"
-                    className="text-sm hover:text-white transition-colors duration-200"
+                    className="text-sm text-white"
                   >
                     14017 / 1500017
                   </a>
@@ -202,7 +202,7 @@ const FooterBRI = () => {
                 <div>
                   <a
                     href="mailto:callbri@bri.co.id"
-                    className="text-sm hover:text-white transition-colors duration-200"
+                    className="text-sm text-white"
                   >
                     callbri@bri.co.id
                   </a>
@@ -250,13 +250,13 @@ const FooterBRI = () => {
             <div className="flex gap-6 text-sm">
               <a
                 href="/privacy-policy"
-                className="hover:text-white transition-colors duration-200"
+                className="text-white"
               >
                 {t("footer.legal.privacy")}
               </a>
               <a
                 href="/terms"
-                className="hover:text-white transition-colors duration-200"
+                className="text-white"
               >
                 {t("footer.legal.terms")}
               </a>
