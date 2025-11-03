@@ -30,12 +30,23 @@ async function seedUsers() {
     // Data user contoh
     const users = [
       {
+        fullName: "Admin BRImo",
+        email: "admin@brimo.com",
+        password: hashedPassword,
+        phoneNumber: "081234567899",
+        accountNumber: "1001234567899",
+        balance: 0,
+        role: "admin",
+        isActive: true,
+      },
+      {
         fullName: "Ahmad Fadli",
         email: "ahmad.fadli@example.com",
         password: hashedPassword,
         phoneNumber: "081234567890",
         accountNumber: "1001234567890",
         balance: 5000000,
+        role: "user",
         isActive: true,
       },
       {
@@ -45,6 +56,7 @@ async function seedUsers() {
         phoneNumber: "081298765432",
         accountNumber: "1001234567891",
         balance: 2500000,
+        role: "user",
         isActive: true,
       },
       {
@@ -54,6 +66,7 @@ async function seedUsers() {
         phoneNumber: "081356789012",
         accountNumber: "1001234567892",
         balance: 10000000,
+        role: "user",
         isActive: true,
       },
     ];
@@ -68,11 +81,16 @@ async function seedUsers() {
     console.log(`📊 Total users created: ${createdUsers.length}`);
     console.log("\n👥 User List:");
     createdUsers.forEach((user, index) => {
-      console.log(`\n${index + 1}. ${user.fullName}`);
+      console.log(
+        `\n${index + 1}. ${user.fullName} ${
+          user.role === "admin" ? "👑 (ADMIN)" : ""
+        }`
+      );
       console.log(`   📧 Email: ${user.email}`);
       console.log(`   📱 Phone: ${user.phoneNumber}`);
       console.log(`   💳 Account: ${user.accountNumber}`);
       console.log(`   💰 Balance: ${user.formattedBalance}`);
+      console.log(`   👤 Role: ${user.role}`);
       console.log(`   🔑 Password: password123 (default)`);
     });
     console.log("\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");

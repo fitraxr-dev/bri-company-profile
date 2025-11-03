@@ -39,6 +39,11 @@ const userSchema = new mongoose.Schema(
       default: 0,
       min: [0, "Saldo tidak boleh negatif"],
     },
+    role: {
+      type: String,
+      enum: ["user", "admin"],
+      default: "user",
+    },
     isActive: {
       type: Boolean,
       default: true,
