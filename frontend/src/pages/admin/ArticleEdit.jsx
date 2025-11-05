@@ -24,7 +24,9 @@ const ArticleEdit = () => {
   const fetchArticle = async () => {
     try {
       setLoading(true);
-      const response = await fetch(`http://localhost:5000/api/articles/${id}`);
+      const API_URL =
+        import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+      const response = await fetch(`${API_URL}/articles/${id}`);
       const data = await response.json();
 
       if (data.success) {
@@ -113,7 +115,9 @@ const ArticleEdit = () => {
     setSaving(true);
 
     try {
-      const response = await fetch(`http://localhost:5000/api/articles/${id}`, {
+      const API_URL =
+        import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+      const response = await fetch(`${API_URL}/articles/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

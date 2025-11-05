@@ -30,9 +30,9 @@ const AdminDashboard = () => {
   const fetchArticles = async () => {
     try {
       setLoading(true);
-      const response = await fetch(
-        `http://localhost:5000/api/articles?lang=${i18n.language}`
-      );
+      const API_URL =
+        import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+      const response = await fetch(`${API_URL}/articles?lang=${i18n.language}`);
       const data = await response.json();
 
       if (data.success) {
@@ -66,7 +66,9 @@ const AdminDashboard = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/articles/${id}`, {
+      const API_URL =
+        import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+      const response = await fetch(`${API_URL}/articles/${id}`, {
         method: "DELETE",
       });
 
