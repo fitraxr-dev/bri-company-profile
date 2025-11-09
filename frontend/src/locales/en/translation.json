@@ -1,0 +1,178 @@
+{
+  "navbar": {
+    "about": "About Us",
+    "services": "Our Services",
+    "kprSimulator": "KPR Simulator",
+    "stock": "Stock Info",
+    "home": "Home",
+    "login": "Login"
+  },
+  "hero": {
+    "title": "Together with BRI<1>mo</1>, Realize Your Financial Future.",
+    "description": "BRI provides trusted banking services with customized solutions for individual and business needs. Our security, convenience, and professional services are ready to accompany you in achieving your financial goals.",
+    "joinBrimo": "Join BRImo",
+    "contactUs": "Contact Us"
+  },
+  "about": {
+    "title": "About BRI",
+    "subtitle": "More than 125 years serving Indonesia.",
+    "description": "As one of the oldest and largest banks in Indonesia, Bank Rakyat Indonesia (BRI) is committed to providing inclusive financial services and empowering communities, especially the MSME sector. Through continuous digital transformation, BRI continues to innovate to become a bank that is closer to the people.",
+    "learnMore": "Learn More",
+    "viewHistory": "View Our History"
+  },
+  "services": {
+    "title": "Our Products & Services",
+    "subtitle": "Trusted financial solutions for individuals, businesses, and communities.",
+    "savings": {
+      "title": "Savings & Current Accounts",
+      "description": "Enjoy various savings options with easy transactions."
+    },
+    "credit": {
+      "title": "Credit & Financing",
+      "description": "Financing solutions for individuals and MSMEs."
+    },
+    "digital": {
+      "title": "Digital Banking (BRImo)",
+      "description": "Access all BRI services in one mobile application."
+    },
+    "investment": {
+      "title": "Investment & Insurance",
+      "description": "Safe investment options and trusted financial protection."
+    },
+    "corporate": {
+      "title": "Corporate Services",
+      "description": "Financial support for large companies and institutions."
+    },
+    "brilink": {
+      "title": "BRILink & Agent Banking",
+      "description": "Access banking services throughout the country."
+    },
+    "viewAll": "View All Services",
+    "learnBrimo": "Learn BRImo"
+  },
+  "stock": {
+    "title": "BRI Stock Info",
+    "subtitle": "Real-time stock information for PT Bank Rakyat Indonesia (Persero) Tbk",
+    "currentPrice": "Current Price",
+    "change": "Change",
+    "percentChange": "Percent Change",
+    "volume": "Volume",
+    "daysRange": "Day's Range",
+    "fiftyTwoWeekRange": "52 Weeks Range",
+    "openPrice": "Opening Price",
+    "previousClose": "Previous Close",
+    "lastUpdate": "Last Update",
+    "refresh": "Refresh Data",
+    "viewIdx": "View on IDX",
+    "loading": "Loading stock data...",
+    "error": "Failed to load stock data",
+    "errorMessage": "Failed to load stock data. Make sure the backend is running.",
+    "tryAgain": "Try Again"
+  },
+  "simulator": {
+    "title": "KPR Simulation",
+    "subtitle": "Calculate your KPR installment for home or vehicle with competitive interest rates from BRI",
+    "selectType": "Select Financing Type",
+    "house": "Home",
+    "car": "Vehicle",
+    "propertyPrice": "House Price",
+    "carPrice": "Vehicle Price",
+    "downPayment": "Down Payment (DP)",
+    "loanTerm": "Loan Term",
+    "interestRate": "Interest Rate (p.a.)",
+    "calculate": "Calculate",
+    "reset": "Reset",
+    "result": "Simulation Result",
+    "loanAmount": "Loan Amount",
+    "monthlyPayment": "Monthly Payment",
+    "totalPayment": "Total Payment",
+    "totalInterest": "Total Interest",
+    "tenor": "Tenor",
+    "rate": "Interest Rate",
+    "downPaymentPercent": "DP",
+    "years": "Years",
+    "amount": "Amount",
+    "hideResult": "Hide Result",
+    "fillForm": "Fill in the form on the left to see the simulation result",
+    "note": "Note",
+    "disclaimer": "This simulation is for estimation purposes only. Interest rates and credit terms may differ based on market conditions and your credit eligibility.",
+    "validation": {
+      "invalidInput": "Invalid input",
+      "downPaymentTooHigh": "DP cannot be more than property price",
+      "invalidLoan": "Invalid loan amount"
+    }
+  },
+  "footer": {
+    "brand": {
+      "description": "Providing the best banking services for all levels of Indonesian society with the spirit of <1>Serving Wholeheartedly</1>.",
+      "tagline": "\"Growing Together for a Better Indonesia\""
+    },
+    "company": {
+      "title": "About Company",
+      "about": "About BRI",
+      "management": "Management",
+      "career": "Career",
+      "news": "News & Information"
+    },
+    "products": {
+      "title": "Products & Services",
+      "savings": "Savings",
+      "loans": "Loans",
+      "creditCard": "Credit Cards",
+      "brimo": "BRImo"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "callCenter": "Call Center",
+      "email": "Email",
+      "address": "Head Office"
+    },
+    "help": {
+      "title": "Help & Support",
+      "faq": "FAQ",
+      "guide": "User Guide",
+      "complaint": "Complaints",
+      "security": "Security Tips"
+    },
+    "social": {
+      "title": "Follow Us",
+      "subtitle": "Stay updated with the latest information from BRI"
+    },
+    "legal": {
+      "title": "Legal Information",
+      "privacy": "Privacy Policy",
+      "terms": "Terms & Conditions",
+      "security": "Security"
+    },
+    "bottom": {
+      "copyright": "© 2024 PT Bank Rakyat Indonesia (Persero) Tbk. All rights reserved.",
+      "license": "Licensed and Supervised by the Financial Services Authority (OJK) and guaranteed by the Deposit Insurance Corporation (LPS)"
+    }
+  },
+  "language": {
+    "select": "Select Language",
+    "en": "English",
+    "id": "Indonesian"
+  },
+  "articles": {
+    "title": "Articles & Tips",
+    "subtitle": "Learn more about BRI digital banking services and financial tips",
+    "readMore": "Read More",
+    "viewAll": "View All Articles",
+    "category": "Category",
+    "author": "Author",
+    "publishedAt": "Published on",
+    "share": "Share",
+    "back": "Back",
+    "notFound": "Article Not Found",
+    "notFoundMessage": "The article you are looking for was not found.",
+    "backToHome": "Back to Home",
+    "helpful": "Was this article helpful?",
+    "yes": "👍 Yes",
+    "no": "👎 No",
+    "related": "Related Articles",
+    "relatedMessage": "Related articles will be displayed here.",
+    "loading": "Loading articles...",
+    "error": "Failed to load articles"
+  }
+}

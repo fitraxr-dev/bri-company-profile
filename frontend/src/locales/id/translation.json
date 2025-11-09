@@ -1,0 +1,178 @@
+{
+  "navbar": {
+    "about": "Tentang Kami",
+    "services": "Layanan Kami",
+    "kprSimulator": "Simulasi KPR",
+    "stock": "Info Saham",
+    "home": "Beranda",
+    "login": "Masuk"
+  },
+  "hero": {
+    "title": "Bersama BRI<1>mo</1>, Wujudkan Masa Depan Finansial Anda.",
+    "description": "BRI memberikan layanan perbankan terpercaya dengan solusi yang disesuaikan untuk kebutuhan individu dan perusahaan. Keamanan, kemudahan, dan layanan profesional kami siap mendampingi Anda mencapai tujuan finansial.",
+    "joinBrimo": "Gabung BRImo",
+    "contactUs": "Hubungi Kami"
+  },
+  "about": {
+    "title": "Tentang BRI",
+    "subtitle": "Lebih dari 125 tahun melayani Indonesia.",
+    "description": "Sebagai salah satu bank tertua dan terbesar di Indonesia, Bank Rakyat Indonesia (BRI) berkomitmen untuk memberikan layanan keuangan yang inklusif dan memberdayakan masyarakat, khususnya sektor UMKM. Dengan transformasi digital berkelanjutan, BRI terus berinovasi untuk menjadi bank yang lebih dekat dengan rakyat.",
+    "learnMore": "Pelajari Lebih Lanjut",
+    "viewHistory": "Lihat Sejarah Kami"
+  },
+  "services": {
+    "title": "Produk & Layanan Kami",
+    "subtitle": "Solusi keuangan terpercaya untuk individu, bisnis, dan masyarakat.",
+    "savings": {
+      "title": "Tabungan & Giro",
+      "description": "Nikmati berbagai pilihan tabungan dengan kemudahan transaksi."
+    },
+    "credit": {
+      "title": "Kredit & Pembiayaan",
+      "description": "Solusi pembiayaan untuk individu dan UMKM."
+    },
+    "digital": {
+      "title": "Digital Banking (BRImo)",
+      "description": "Akses semua layanan BRI dalam satu aplikasi mobile."
+    },
+    "investment": {
+      "title": "Investasi & Asuransi",
+      "description": "Pilihan investasi aman dan perlindungan finansial terpercaya."
+    },
+    "corporate": {
+      "title": "Layanan Korporasi",
+      "description": "Dukungan finansial bagi perusahaan dan institusi besar."
+    },
+    "brilink": {
+      "title": "BRILink & Agen Banking",
+      "description": "Akses layanan perbankan di seluruh pelosok negeri."
+    },
+    "viewAll": "Lihat Semua Layanan",
+    "learnBrimo": "Pelajari BRImo"
+  },
+  "stock": {
+    "title": "Info Saham BRI",
+    "subtitle": "Informasi saham real-time PT Bank Rakyat Indonesia (Persero) Tbk",
+    "currentPrice": "Harga Saat Ini",
+    "change": "Perubahan",
+    "percentChange": "Perubahan Persen",
+    "volume": "Volume",
+    "daysRange": "Day's Range",
+    "fiftyTwoWeekRange": "52 Weeks Range",
+    "openPrice": "Harga Pembukaan",
+    "previousClose": "Penutupan Sebelumnya",
+    "lastUpdate": "Update Terakhir",
+    "refresh": "Refresh Data",
+    "viewIdx": "Lihat di IDX",
+    "loading": "Memuat data saham...",
+    "error": "Gagal memuat data saham",
+    "errorMessage": "Gagal memuat data saham. Pastikan backend berjalan.",
+    "tryAgain": "Coba Lagi"
+  },
+  "simulator": {
+    "title": "Simulasi KPR",
+    "subtitle": "Hitung cicilan KPR untuk rumah atau kendaraan Anda dengan suku bunga kompetitif dari BRI",
+    "selectType": "Pilih Tipe Pembiayaan",
+    "house": "Rumah",
+    "car": "Kendaraan",
+    "propertyPrice": "Harga Rumah",
+    "carPrice": "Harga Kendaraan",
+    "downPayment": "Uang Muka (DP)",
+    "loanTerm": "Tenor Pinjaman",
+    "interestRate": "Suku Bunga (p.a.)",
+    "calculate": "Hitung",
+    "reset": "Reset",
+    "result": "Hasil Simulasi",
+    "loanAmount": "Jumlah Pinjaman",
+    "monthlyPayment": "Cicilan per Bulan",
+    "totalPayment": "Total Pembayaran",
+    "totalInterest": "Total Bunga",
+    "tenor": "Tenor",
+    "rate": "Suku Bunga",
+    "downPaymentPercent": "DP",
+    "years": "Tahun",
+    "amount": "Jumlah",
+    "hideResult": "Tutup Hasil",
+    "fillForm": "Isi formulir di samping untuk melihat hasil simulasi",
+    "note": "Catatan",
+    "disclaimer": "Simulasi ini hanya untuk perkiraan. Bunga dan persyaratan kredit dapat berbeda sesuai kondisi pasar dan kelayakan kredit Anda.",
+    "validation": {
+      "invalidInput": "Input tidak valid",
+      "downPaymentTooHigh": "DP tidak bisa lebih dari harga properti",
+      "invalidLoan": "Jumlah pinjaman tidak valid"
+    }
+  },
+  "footer": {
+    "brand": {
+      "description": "Memberikan layanan perbankan terbaik untuk seluruh lapisan masyarakat Indonesia dengan semangat <1>Melayani Dengan Setulus Hati</1>.",
+      "tagline": "\"Tumbuh Bersama untuk Indonesia yang Lebih Baik\""
+    },
+    "company": {
+      "title": "Tentang Perusahaan",
+      "about": "Tentang BRI",
+      "management": "Manajemen",
+      "career": "Karir",
+      "news": "Berita & Informasi"
+    },
+    "products": {
+      "title": "Produk & Layanan",
+      "savings": "Tabungan",
+      "loans": "Pinjaman",
+      "creditCard": "Kartu Kredit",
+      "brimo": "BRImo"
+    },
+    "contact": {
+      "title": "Hubungi Kami",
+      "callCenter": "Call Center",
+      "email": "Email",
+      "address": "Kantor Pusat"
+    },
+    "help": {
+      "title": "Bantuan & Dukungan",
+      "faq": "FAQ",
+      "guide": "Panduan Pengguna",
+      "complaint": "Pengaduan",
+      "security": "Tips Keamanan"
+    },
+    "social": {
+      "title": "Ikuti Kami",
+      "subtitle": "Dapatkan informasi terkini dari BRI"
+    },
+    "legal": {
+      "title": "Informasi Legal",
+      "privacy": "Kebijakan Privasi",
+      "terms": "Syarat & Ketentuan",
+      "security": "Keamanan"
+    },
+    "bottom": {
+      "copyright": "© 2024 PT Bank Rakyat Indonesia (Persero) Tbk. Hak Cipta Dilindungi.",
+      "license": "Berizin dan Diawasi oleh Otoritas Jasa Keuangan (OJK) serta dijamin oleh Lembaga Penjamin Simpanan (LPS)"
+    }
+  },
+  "language": {
+    "select": "Pilih Bahasa",
+    "en": "Inggris",
+    "id": "Indonesia"
+  },
+  "articles": {
+    "title": "Artikel & Tips",
+    "subtitle": "Pelajari lebih lanjut tentang layanan perbankan digital BRI dan tips keuangan",
+    "readMore": "Baca Selengkapnya",
+    "viewAll": "Lihat Semua Artikel",
+    "category": "Kategori",
+    "author": "Penulis",
+    "publishedAt": "Dipublikasikan pada",
+    "share": "Bagikan",
+    "back": "Kembali",
+    "notFound": "Artikel Tidak Ditemukan",
+    "notFoundMessage": "Artikel yang Anda cari tidak ditemukan.",
+    "backToHome": "Kembali ke Beranda",
+    "helpful": "Apakah artikel ini membantu?",
+    "yes": "👍 Ya",
+    "no": "👎 Tidak",
+    "related": "Artikel Terkait",
+    "relatedMessage": "Artikel terkait akan ditampilkan di sini.",
+    "loading": "Memuat artikel...",
+    "error": "Gagal memuat artikel"
+  }
+}
