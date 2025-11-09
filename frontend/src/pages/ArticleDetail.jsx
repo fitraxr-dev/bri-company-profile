@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import {
   ArrowLeftIcon,
@@ -8,6 +8,9 @@ import {
   TagIcon,
   ShareIcon,
 } from "@heroicons/react/24/outline";
+import FooterBRI from "../components/FooterBRI";
+import LanguageSwitcher from "../components/LanguageSwitcher";
+import { LogIn } from "lucide-react";
 
 const ArticleDetail = () => {
   const { slug } = useParams();
@@ -196,30 +199,50 @@ const ArticleDetail = () => {
   }
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: "#F4F6F8" }}>
+    <>
+      <div className="min-h-screen" style={{ backgroundColor: "#F4F6F8" }}>
       {/* Header with Back Button */}
       <div
         className="py-4 sticky top-0 z-50 shadow-lg"
         style={{ backgroundColor: "#00529B" }}
       >
         <div className="container mx-auto px-6">
-          <button
-            onClick={() => navigate(-1)}
-            className="btn btn-sm gap-2 font-body border-none"
-            style={{
-              backgroundColor: "white",
-              color: "#000000",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = "rgba(255,255,255,0.9)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = "white";
-            }}
-          >
-            <ArrowLeftIcon className="w-5 h-5" style={{ color: "#000000" }} />
-            {i18n.language === "id" ? "Kembali" : "Back"}
-          </button>
+          <div className="flex items-center justify-between">
+            <div>
+              <button
+                onClick={() => navigate(-1)}
+                className="btn btn-sm gap-2 font-body border-none"
+                style={{
+                  backgroundColor: "white",
+                  color: "#000000",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = "rgba(255,255,255,0.9)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = "white";
+                }}
+              >
+                <ArrowLeftIcon className="w-5 h-5" style={{ color: "#000000" }} />
+                {i18n.language === "id" ? "Kembali" : "Back"}
+              </button>
+            </div>
+
+            {/* Right side: Login & LanguageSwitcher (copied from Navbar) */}
+            <div className="flex items-center gap-2">
+              <Link
+                to="/login"
+                className="hidden md:flex items-center gap-2 px-4 py-2 bg-bri-orange text-white rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300"
+              >
+                <LogIn size={18} />
+                {t("navbar.login") || "Login"}
+              </Link>
+
+              <div className="hidden md:flex">
+                <LanguageSwitcher />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -288,8 +311,8 @@ const ArticleDetail = () => {
         </article>
       </div>
 
-      {/* Custom Styles for Article Content */}
-      <style jsx>{`
+  {/* Custom Styles for Article Content */}
+      <style>{`
         .article-content {
           font-size: 1.125rem;
           line-height: 1.75;
@@ -312,7 +335,14 @@ const ArticleDetail = () => {
           list-style-type: disc;
         }
       `}</style>
-    </div>
+  </div>
+
+  {/* Spacer */}
+  <div className="mt-12 md:mt-24" aria-hidden="true" />
+
+  {/* Footer */}
+  <FooterBRI />
+    </>
   );
 };
 
