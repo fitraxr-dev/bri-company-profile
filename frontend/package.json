@@ -4,7 +4,7 @@
   "description": "BRImo - Digital Banking Solution by Bank BRI",
   "private": true,
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --mode dev",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .js,.jsx"

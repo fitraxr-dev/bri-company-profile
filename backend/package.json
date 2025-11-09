@@ -7,13 +7,15 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
+    "dev": "node -r dotenv/config src/index.js dotenv_config_path=.env.dev",
+    "dev:watch": "nodemon -r dotenv/config src/index.js dotenv_config_path=.env.dev",
     "lint": "eslint . --ext .js",
-    "migrate": "node src/migrations/initUserCollection.js",
-    "seed": "node src/seeders/users.seed.js && node src/seeders/articles.seed.js",
+    "migrate": "node src/migrations/migrate.js",
+    "migrate:dev": "node -r dotenv/config src/migrations/migrate.js dotenv_config_path=.env.dev",
+    "seed": "node src/seed/seed.js",
+    "seed:dev": "node -r dotenv/config src/seed/seed.js dotenv_config_path=.env.dev",
     "db:setup": "npm run migrate && npm run seed",
-    "migrate:articles": "node src/migrations/createArticlesCollection.js",
-    "seed:articles": "node src/seed/articles.seed.js"
+    "db:setup:dev": "npm run migrate:dev && npm run seed:dev"
   },
   "engines": {
     "node": ">=18"
