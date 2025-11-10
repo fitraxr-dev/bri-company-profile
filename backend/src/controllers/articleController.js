@@ -3,10 +3,11 @@ import Article from "../models/Article.js";
 // Get all articles
 export const getAllArticles = async (req, res) => {
   try {
-    const { lang = "id", status = "published", category } = req.query;
+    const { lang = "id", status, category } = req.query;
 
     const filter = {};
-    if (status) {
+    // Only filter by status if explicitly provided and not empty string
+    if (status && status !== "") {
       filter.status = status;
     }
     if (category) {

@@ -32,7 +32,10 @@ const AdminDashboard = () => {
       setLoading(true);
       const API_URL =
         import.meta.env.VITE_API_URL || "http://localhost:5000/api";
-      const response = await fetch(`${API_URL}/articles?lang=${i18n.language}`);
+      // Admin should see ALL articles (published + draft)
+      const response = await fetch(
+        `${API_URL}/articles?lang=${i18n.language}&status=`
+      );
       const data = await response.json();
 
       if (data.success) {
