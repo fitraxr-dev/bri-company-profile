@@ -31,8 +31,8 @@ export default function Navbar() {
         <nav className="flex items-center justify-between h-16">
           {/* Left: logo */}
           <div className="flex items-center flex-1 gap-2">
-            <a
-              href="#hero"
+            <Link
+              to="/"
               aria-label="Bank BRI Home"
               className="flex items-center"
             >
@@ -41,7 +41,7 @@ export default function Navbar() {
                 alt="BRI logo"
                 className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain transition-transform duration-150 hover:scale-105"
               />
-            </a>
+            </Link>
             <span className="text-4xl font-bold text-bri-orange">mo</span>
           </div>
 
