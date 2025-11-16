@@ -18,13 +18,13 @@ router.get("/category/:category", getArticlesByCategory);
 router.get("/:id", getArticleById);
 
 // Protected routes (uncomment when auth is needed)
-// router.post('/', authMiddleware, createArticle);
-// router.put('/:id', authMiddleware, updateArticle);
-// router.delete('/:id', authMiddleware, deleteArticle);
+router.post('/', authMiddleware, createArticle);
+router.put('/:id', authMiddleware, updateArticle);
+router.delete('/:id', authMiddleware, deleteArticle);
 
 // For now, allow public creation/update/delete for testing
-router.post("/", createArticle);
-router.put("/:id", updateArticle);
-router.delete("/:id", deleteArticle);
+// router.post("/", createArticle);
+// router.put("/:id", updateArticle);
+// router.delete("/:id", deleteArticle);
 
 export default router;
