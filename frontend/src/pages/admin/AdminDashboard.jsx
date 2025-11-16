@@ -73,6 +73,9 @@ const AdminDashboard = () => {
         import.meta.env.VITE_API_URL || "http://localhost:5000/api";
       const response = await fetch(`${API_URL}/articles/${id}`, {
         method: "DELETE",
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
       });
 
       const data = await response.json();
