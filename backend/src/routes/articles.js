@@ -8,6 +8,7 @@ import {
   deleteArticle,
   getArticlesByCategory,
 } from "../controllers/articleController.js";
+import authMiddleware from "../middleware/authMiddleware.js";
 
 const router = express.Router();
 
