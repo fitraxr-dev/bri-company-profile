@@ -79,7 +79,7 @@ export default function Hero() {
       </div>
 
       {/* Custom Animation */}
-      <style jsx>{`
+      <style>{`
         @keyframes float {
           0%,
           100% {

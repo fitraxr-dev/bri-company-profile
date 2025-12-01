@@ -110,7 +110,7 @@ const ArticlesSection = () => {
     );
   }
 
-  if (articles.length === 0) {
+  if (!articles || articles.length === 0) {
     return null;
   }
 
